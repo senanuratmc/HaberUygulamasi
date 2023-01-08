@@ -1,0 +1,57 @@
+<!-- "Haber Başlıkları" başlığında burger-style side-nav tarzı yan gezinme düğmesi ve menü simgesi kullanan ayarlar menüsü bulunu.-->
+<mat-toolbar color="primary">
+  <button mat-button (click)="sidenav.open()"><mat-icon>menu</mat-icon></button>
+  <span>Haber Başlıkları</span>
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!--Ayarlar alt menü butonlaerı -->
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Ayarlar</button>
+  <button mat-menu-item>Yardım</button>
+</mat-menu>
+
+<!--Tam ekran bir uygulamaya yan içerik eklemek için gezinme bileşeni.-->
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav">
+    <mat-list class="list-nav">
+      <mat-list-item class="list-item" *ngFor="let source of newSource"
+        (click)="searchArticles(source.id); sidenav.close()">
+        <span class="source-name"> {{ source.name }}</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <!--material cards'ın kullanılmasının amacı ngFor loop kullanarak haberleri listelemek:
+    -mat-card-header içerisindeki div, json'dan gelen image source alınarak image eklenir.
+    -mat-card-content haber açıklaması için kullanıyor.
+    -mat-card-actions içerisindeki kullanılan 4 buton  haber içeriğiyle alakalı.-->
+  <mat-card appearance="outlined" class="example-card"
+    *ngFor="let article of (mArticles$ | async)?.articles; index as i">
+    <mat-card-header>
+      <div mat-card-avatar [ngStyle]="{
+          'background-image':
+            'url(../assets/images/' + article.source.id + '.png)'
+        }" class="example-header-image w-50"></div>
+      <mat-card-title class="title">{{ article.title }}</mat-card-title>
+      <mat-card-subtitle>{{ article.source.name }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image class="img-article" src="{{ article.urlToImage }}" alt="" />
+    <mat-card-content>
+      <p>
+        {{ article.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <button mat-button color="white">
+        <mat-icon>thumb_up_alt</mat-icon> 12 Beğeni
+      </button>
+      <button mat-button color="white"><mat-icon>share</mat-icon> Paylaş</button>
+      <a mat-button color="white" href="{{ article.url }}" target="_blank"><mat-icon>visibility</mat-icon> Daha Fazla</a>
+    </mat-card-actions>
+  </mat-card>
+</mat-sidenav-container>
