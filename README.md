@@ -74,7 +74,3 @@ export class NewsApiService {
 ## :clap: İlham Kaynağı
 
 * [article by Rashid Sakara on building a news application using Angular 6 and Google’s Material Design](https://www.smashingmagazine.com/2018/10/news-application-with-angular-and-material-design/)
-
-## :file_folder: Lisans
-
-* Bu proje MIT lisansının koşulları altında lisanslanmıştır.
