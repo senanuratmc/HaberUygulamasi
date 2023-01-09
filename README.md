@@ -12,10 +12,10 @@
 
 ## :camera: Uygulama Örnek Fotoğraflar
 
-![Example screenshot](![Haber uygulaması ekran görüntüsü](https://user-images.githubusercontent.com/102552012/211427785-18348f13-96f1-453f-b5b1-1042c6caecb8.png)).
-![Example screenshot](![Haber uygulaması ekran görüntüsü2](https://user-images.githubusercontent.com/102552012/211427963-48ef9394-75dd-49cb-a965-d67a5059c991.png)).
-![Example screenshot](![Haber uygulaması ekran görüntüsü3](https://user-images.githubusercontent.com/102552012/211427996-4fa6730c-f846-4342-8672-eccc7474b857.png)).
-![Example screenshot](![Haber uygulaması ekran görüntüsü4](https://user-images.githubusercontent.com/102552012/211428048-376cad29-ee1e-4f3a-b54b-4c425438dfa1.png))
+(![Haber uygulaması ekran görüntüsü](https://user-images.githubusercontent.com/102552012/211427785-18348f13-96f1-453f-b5b1-1042c6caecb8.png)).
+(![Haber uygulaması ekran görüntüsü2](https://user-images.githubusercontent.com/102552012/211427963-48ef9394-75dd-49cb-a965-d67a5059c991.png)).
+(![Haber uygulaması ekran görüntüsü3](https://user-images.githubusercontent.com/102552012/211427996-4fa6730c-f846-4342-8672-eccc7474b857.png)).
+(![Haber uygulaması ekran görüntüsü4](https://user-images.githubusercontent.com/102552012/211428048-376cad29-ee1e-4f3a-b54b-4c425438dfa1.png))
 
 ## :signal_strength: Teknolojiler
 
