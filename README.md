@@ -1,37 +1,16 @@
-# :zap: Angular News App
+# :zap: Haber Uygulaması
 
-* Gets API news data and displays it in a format suitable for viewing on a phone.
-* Displays a left hand side navigation bar that allows the user to select a news channel. A single column displays news articles from this news channel.
-* The News API service from [newsapi](https://newsapi.org) is used to generate the articles. It now only works on localhost. It will not work when deployed due to CORS errors (error 406) which means they want you to pay a subscription to fully access the API.
-* Code from [article by Rashid Sakara](https://www.smashingmagazine.com/2018/10/news-application-with-angular-and-material-design/) - see [:clap: Inspiration](#clap-inspiration) below
-* **Note:** to open web links in a new window use: _ctrl+click on link_
+* API, haber verilerini alır ve telefonda görüntülemeye uygun bir formatta görüntüler.
+* Kullanıcının bir haber kanalı seçmesini sağlayan sol taraftaki gezinme çubuğunu görüntüler.Tek bir sütunda bu haber kanalından alınan haberler görüntülenir.
+* Yazıları oluşturmak için [newsapi] (https://newsapi.org) tarafından sunulan News API hizmeti kullanılır. Şimdi yalnızca localhost'da çalışmaktadır. CORS hataları (hata 406) nedeniyle dağıtıldığında çalışmaz, bu da API'ye tam olarak erişmek için abonelik ödemenizi istemeleri anlamına gelir.
+* Kod:[article by Rashid Sakara](https://www.smashingmagazine.com/2018/10/news-application-with-angular-and-material-design/) - Bkz. [:clap: Inspiration](#clap-inspiration).
+* **Not:** web bağlantılarını yeni bir pencerede açmak için : _ctrl+click on link_
+## :books: Genel Bilgi
+* Uygulama şablonundaki nesnelerde depolanan uzak verileri bağlamak için Angular'ın model görünümü görünüm modelini (MVVM(model-view-viewmodel)) kullanır. Bileşen, kontrol cihazı/görünüm modelinin bir kısmını oynatır. Şablon görünümü temsil eder.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-news-app?style=plastic)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-news-app?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-news-app?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-news-app?style=plastic)
-
-## :page_facing_up: Table of contents
-
-* [:zap: Angular News App](#zap-angular-news-app)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
-  * [:books: General info](#books-general-info)
-  * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
-  * [:computer: Code Examples](#computer-code-examples)
-  * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
-  * [:clap: Inspiration](#clap-inspiration)
-  * [:file_folder: License](#file_folder-license)
-  * [:envelope: Contact](#envelope-contact)
-
-## :books: General info
-
-* Uses the model-view-viewmodel (MVVM) of Angular to bind the remote data that is stored in objects in the application template. The component plays the part of the controller/viewmodel. The template represents the view.
 * Very basic app to show news, does not use reactive programming best practices - specified function return types, typescript models, etc....
 
-## :camera: Screenshots
+## :camera: Uygulama Örnek Fotoğraflar
 
 ![Example screenshot](./img/news-headlines.png).
 
@@ -42,15 +21,15 @@
 * [News REST API v2](https://newsapi.org/) used to search for news articles.
 * [Angular Material Design v15](https://material.angular.io/) used for the user interface, especially [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview),  [mat-card](https://material.angular.io/components/card/overview) etc.
 
-## :floppy_disk: Setup
+## :floppy_disk: Kurulum
 
-* Install dependencies using `npm i`
-* Get yourself a free API key from `www.newsapi.org` and add it to `news-api.service.ts`
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
+* Bağımlılıkları yüklemek için `npm i` kullanın.
+* `www.newsapi.org` and add it to `news-api.service.ts` den ücretsiz bir API anahtarı alın. 
+* Geliştirme sunucusu için `ng serve` çalıştırın. `http://localhost:4200/` adresine gidin. Kaynak dosyalardan herhangi birini değiştirirseniz uygulama otomatik olarak yeniden yüklenir.
 
-## :computer: Code Examples
+## :computer: Kod Örnekleri
 
-* `news-api.service.ts` to get API news data using Angular httpClient module.
+* `news-api.service.ts` adresine gidin ve Angular httpClient modülünü kullanarak API haber verilerini alın.
 
 ```typescript
 
@@ -79,23 +58,20 @@ export class NewsApiService {
 
 ```
 
-## :cool: Features
+## :cool: Özellikler
 
-* [Angular HttpClient](https://angular.io/guide/http) module used to communicate with back-end services via the XMLHttpRequest browser interface.
+* [Angular HttpClient](https://angular.io/guide/http) modülü, XMLHtpRequest tarayıcı arayüzü üzerinden arka uç hizmetleriyle iletişim kurmak için kullanılır.
 
-## :clipboard: Status & To-Do List
 
-* Status: Working.
-* To-Do: Nothing.
+## :clipboard: Durum ve Yapılacak Listesi
 
-## :clap: Inspiration
+* Durum: Çalışıyor.
+* Yapılacak: Yok .
+
+## :clap: İlham Kaynağı
 
 * [article by Rashid Sakara on building a news application using Angular 6 and Google’s Material Design](https://www.smashingmagazine.com/2018/10/news-application-with-angular-and-material-design/)
 
-## :file_folder: License
+## :file_folder: Lisans
 
-* This project is licensed under the terms of the MIT license.
-
-## :envelope: Contact
-
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Bu proje MIT lisansının koşulları altında lisanslanmıştır.
