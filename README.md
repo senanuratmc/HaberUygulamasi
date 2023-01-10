@@ -29,7 +29,7 @@
 
 ## :computer: Kod Örnekleri
 
-* `news-api.service.ts` adresine gidin ve Angular httpClient modülünü kullanarak API haber verilerini alın.
+* `news-api.service.ts` adresine gidin ve [Angular HttpClient](https://angular.io/guide/http)  modülünü kullanarak API haber verilerini alın.
 
 ```typescript
 
