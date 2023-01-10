@@ -3,7 +3,7 @@
 * API, haber verilerini alır ve telefonda görüntülemeye uygun bir formata dönüştürmeyi sağlar.
 * Kullanıcının bir haber kanalı seçmesini sağlayan sol taraftaki menüde gösterir. Tek bir sütunda bu haber kanalından alınan haberler görüntülenmiştir.
 * Haberleri oluşturmak için [newsapi] (https://newsapi.org) tarafından sunulan News API kullanılmıştır. 
-* **Not:** web bağlantılarını yeni bir pencerede açmak için : _ctrl+click on link_
+
 ## :books: Genel Bilgi
 * Uygulama şablonundaki nesnelerde depolanan uzak verileri bağlamak için Angular'ın MVVM (model-view-viewmodel) kullanır. Bileşen, kontrol cihazının ya da görünüm modelinin bir kısmını oynatır.
 
