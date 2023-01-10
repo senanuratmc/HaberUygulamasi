@@ -19,8 +19,7 @@
 * [Angular v15](https://angular.io/)
 * RxJS Library v7, API veri gözlemlerine abone olmak için kullanılmıştır.
 * [News REST API v2](https://newsapi.org/) haber makalelerini araştırmak için kullanıldı.
-* [Angular Material Design v15](https://material.angular.io/) kullanıcı arayüzü için kullanılmıştır, özellikle [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview),  [mat-card](https://material.angular.io/components/card/overview) vb.
-
+* [Angular Material Design v15](https://material.angular.io/) kullanıcı arayüzü için kullanılmıştır, özellikle [mat-menu](https://material.angular.io/components/menu/overview), [mat-sidenav](https://material.angular.io/components/sidenav/overview),  [mat-card](https://material.angular.io/components/card/overview) vb. bileşenleri kullanılmıştır.
 ## :floppy_disk: Kurulum
 
 * Bağımlılıkları yüklemek için `npm i` kullanın.
